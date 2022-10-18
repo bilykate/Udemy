@@ -1,9 +1,6 @@
 const userName = prompt("Please enter your name")
-if(!userName) {
-  prompt("Please enter valid name")
-} 
-  
 const userAge = prompt("Please enter your age")
+
 if(userAge < 18) {
   alert("You are not allowed to visit this website")
 }
@@ -16,5 +13,12 @@ if(userAge < 18) {
   }
 } else { 
   alert('Welcome' + ' ' + userName)
+}
+
+while (!userName) {
+  userName = prompt("Please enter valid name")
+}
+while (!userAge) { 
+  userAge = parseInt(prompt("Please enter valid number"))
 }
 
